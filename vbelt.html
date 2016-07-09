@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<title>w3.css</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<style>
+body {
+    font-family: "Lato", sans-serif;
+    background-color:#61a6be;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px !important;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+@media screen and (max-width:500px){
+#tfnewsearch{
+  width:100px;
+ height:100px;
+  background-color:black;
+  
+}
+}
+#tfheader{
+  margin-left:80%;
+   display:block;
+margin-top:-60px;
+
+}
+#pic
+{
+    height:150px;
+    width:150px;
+   border-radius:50%;
+  background-image:url('pulley.jpeg');
+  margin-left:40%;
+  margin-top:5%;
+    border-radius:50%;
+   position:absolute;
+   background-size:cover;
+   box-shadow:5px 5px grey;
+
+}
+@media screen and (max-width:500px){
+#pic{
+  width:100px;
+ height:100px;
+ margin-left:40%;
+}
+}
+.mySlides {display:none;
+           margin-top:15%;; 
+          margin-left:40%;
+           height:100px;
+           width:100px;
+           }
+.icon{
+        height:40px;
+        width:40px;
+</style>
+<body>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">x</a>
+  <a href="#">About</a>
+  <a href="#">iron rate</a>
+  <a href="#">product</a>
+  <a href="#">contact</a>
+</div>
+
+<div id="main">
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()"><img class="icon" src="/home/tammana/Desktop/index.png"></span>
+</div>
+<div id="tfheader">
+		<form id="tfnewsearch" method="get" action="http://www.google.com">
+		        <input type="text" id="tfq" class="tftextinput2" name="q" size="10" maxlength="120" value="Search"><input type="submit" value="?" class="tfbutton2">
+		</form>
+		<div class="tfclear"></div>
+	</div> 
+<div id="pic"></div>
+<h2 class="w3-center">Automatic Slideshow</h2>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="/home/tammana/Desktop/jsproject/index.jpeg" style="width:100%">
+  <img class="mySlides" src="/home/tammana/Desktop/jsproject/fruit.png" style="width:100%">
+  <img class="mySlides" src="/home/tammana/Desktop/jsproject/water.png" style="width:100%">
+</div>
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+}
+
+</script>
+<script>
+
+var myIndex = 0;
+carousel();
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+
+</script>    
+
+	
+</body>
+</html> 
+
