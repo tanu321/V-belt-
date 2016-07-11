@@ -1,0 +1,9 @@
+<head>
+  <title>pulley</title>
+</head>
+<body>
+   {{> tam}}
+</body>
+<template name="tam">
+   i am tan
+</template>
