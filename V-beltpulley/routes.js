@@ -15,3 +15,10 @@ action: function(){
 	BlazeLayout.render("iron");
 }
 });
+
+FlowRouter.route('/product',{
+action: function(){
+	BlazeLayout.render("product");
+}
+});
+

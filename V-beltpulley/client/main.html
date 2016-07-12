@@ -4,13 +4,14 @@
 
 <body>
  {{> menu}}
+
  
 </body>
 <template name="menu">
 <div id="nav">
 <div class="a"><a href="/home">home</a></div><br>
 <div class="a"><a href="/iron">iron rate</a></div><br>
-<div class="a">product</div><br>
+<div class="a"><a href="/product">product</a></div><br>
 <div class="a">contact</div><br>
 <div class="a">newsfeed</div><br>
 <div id="b">search</div>
@@ -26,4 +27,154 @@ this is another example
 <template name="home">
 this is an example of meteor routers 
 </template>
+<template name="product">
+this is an 
+
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+<form>
+  SELECT PRICE:
+  <input type="number" class="prc" name="price">
+  <input type="submit" class="btn" name="ALL SIZES">
+</form>
+      <img src="/mq8iX2ZtclV2a9rE7hUS_yw.jpg" class="img-responsive">
+      <div class="carousel-caption">
+        <h1>first type</h1>
+      </div>
+    </div>
+    <div class="item"><form>
+  SELECT PRICE:
+  <input type="number" class="prc" name="price">
+  <input type="submit" class="btn" name="ALL SIZES">
+</form>
+      <img src="/v-belt-pulley-500x500.jpg" class="img-responsive">
+
+      <div class="carousel-caption">
+        second type
+      </div>
+    </div>
+     <div class="item">
+<form>
+  SELECT PRICE:
+  <input type="number" class="prc" name="price">
+  <input type="submit" class="btn" name="ALL SIZES">
+</form>
+      <img src="/V-belt-pulleys.jpg" class="img-responsive">
+      <div class="carousel-caption">
+        third type
+      </div>
+    </div>
+    <div class="item">
+<form>
+  SELECT PRICE:
+  <input type="number" class="prc" name="price">
+  <input type="submit" class="btn" name="ALL SIZES">
+</form>
+      <img src="/images.jpeg" class="img-responsive">
+      <div class="carousel-caption">
+        fourth type
+      </div>
+    </div>
+    <div class="item">
+<form>
+  SELECT PRICE:
+  <input type="number" class="prc" name="price">
+  <input type="submit" class="btn" name="ALL SIZES">
+</form>
+      <img src="/31728+QTQQL.jpg" class="img-responsive">
+      <div class="carousel-caption">
+        fifth type
+      </div>
+    </div>
+    <div class="item">
+<form>
+  SELECT PRICE:
+  <input type="number" class="prc" name="price">
+  <input type="submit" class="btn" name="ALL SIZES">
+</form>
+      <img src="/v-belt-pulleys-500x500-250x250.jpg" class="img-responsive">
+      <div class="carousel-caption">
+        sixth type
+      </div>
+    </div>
+    </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+{{> table}}
+</template>
+<template name="table">
+<div class="table-responsive">
+  <table class="table table-hover">
+
+  <tr>
+    <th>SIZE NAME</th>
+    <th>WEIGHT</th>
+    <th>PROFIT</th>
+    <th>ACTUAL PRICE</th>
+  </tr>
+  <tr class="active">
+    <td>3 * 3B</td>
+    <td>2-980</td>
+    <td>20</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>4 * 3B</td>
+    <td>3-780</td>
+    <td>25</td>
+    <td></td>
+  </tr>
+  <tr class="active">
+    <td>4.5 * 3B</td>
+    <td>4-500</td>
+    <td>35</td>
+    <td></td>
+  </tr>
+  <tr>
+    <th>2C</th>
+ 
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+ <tr>
+    <th>SIZE NAME</th>
+    <th>WEIGHT</th>
+    <th>PROFIT</th>
+    <th>ACTUAL PRICE</th>
+  </tr>
+  <tr>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+</div>
+</template>
+
 
