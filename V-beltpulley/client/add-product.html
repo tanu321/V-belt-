@@ -1,0 +1,30 @@
+<template name="addProduct">
+  <form class="add-product-form main-form">
+  <h2> Add Product </h2>
+  <label>Name </label> <br/>
+  <input type="text" name="name" id="name" class="half-width-input"><br/>
+
+  <label>Weight </label> <br/>
+  <input type="number" name="weight" id="weight" class="half-width-input"><br/>
+
+  <label>Profit </label> <br/>
+  <input type="number" name="profit" id="profit" class="half-width-input"><br/>
+
+
+  <label> Select Type </label> <br/>
+  <select id="typeOfProduct" class="form-control half-width-input" >
+    <option>Single belt</option>
+    <option>Double belt</option>
+    <option>Tripple belt</option>
+    <option>Patta belt</option>
+    <option>Gattu</option>
+    <option>Solid pulley</option>
+  </select>
+  
+  <button type="button" class="btn btn-raised btn-primary" id="add-product-btn">Add product</button>
+
+<div id="di"></div>
+</form> 
+
+
+</template>

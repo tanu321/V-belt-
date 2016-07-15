@@ -30,7 +30,7 @@
   width:10%;
   height:30px;	
 }
-.select-price-form {
+.main-form {
   max-width:500px;
   background:white;
   margin:10px auto 10px auto;
@@ -76,3 +76,6 @@ display: block;
         padding-left:5%;
   }
 }
+#id{
+     color:red;
+     }

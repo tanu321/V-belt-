@@ -4,26 +4,17 @@
 
 <body>
  {{> menu}}
+
  
 </body>
-<template name="menu">
-<div id="nav">
-<div class="a"><a href="/home">home</a></div><br>
-<div class="a"><a href="/iron">iron rate</a></div><br>
-<div class="a">product</div><br>
-<div class="a">contact</div><br>
-<div class="a">newsfeed</div><br>
-<div id="b">search</div>
-<div id="c">?</div>
-</div>
-</template>
-<template name="evehi">
-<img src="/pulley.jpeg" class="circle"/>
-</template>
-<template name= "iron"> 
-this is another example 
-</template>
-<template name="home">
-this is an example of meteor routers 
-</template>
+
+
+
+
+
+
+
+
+
+
 
