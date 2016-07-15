@@ -1,13 +1,14 @@
 <template name="product">
+{{#if currentUser}}
 
 {{>addProduct}}	
 {{>getProducts}}
-
+{{/if}}
 </template>
 
 <template name="getProducts">
-
-<form class="select-price-form main-form">
+<button onclick="myFunction()" class="btn btn-raised btn-info" id="demo">search</button>
+<form class="select-price-form main-form" id="form">
   <h2> Search Products </h2>
   <label>Select Price </label> <br/>
   <input type="number" name="price" id="sformPrice" class="half-width-input"><br/>
@@ -28,17 +29,18 @@
 </form> 
 <div id="each">
 <table class="table table-hover">
-<tr> <th> name </th> <th> weight</th> <th> profit </th> <th> actual price </th> <th> Price </th></tr>
+<tr> <th> name </th> <th> weight</th> <th> profit </th> <th> type of product </th> <th> Price </th></tr>
 {{#each pulleys}}
 <tr>
 	<td> {{name}}</td>
 	<td>{{weight}}</td>
         <td>{{profit}}</td>
-        <td>{{typeOfProduct}}</td>
-	<td> {{actualPrice}} </td>
+        <td>{{typeOfProduct}} </td>
+	<td>{{actualPrice}}</td>
         
 </tr>
 {{/each}}
 </table>
 </div>
+
 </template>

@@ -23,3 +23,5 @@ fezvrasta:bootstrap-material-design
 kadira:flow-router
 kadira:blaze-layout
 session
+accounts-password
+accounts-ui

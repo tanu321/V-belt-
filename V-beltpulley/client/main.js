@@ -40,5 +40,11 @@ pulleys:function(){
 return Session.get('pull');
 
 }
+
 });
-  
+  Template.getProducts.events({
+    'click button'(events){
+     var a=documnt.getElementById("form");
+       return a;
+}
+});
