@@ -38,3 +38,7 @@ action: function(){
 	BlazeLayout.render("about");
 }
 });
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7eec089e820b25805acbda37e8a8b2d0d6fae294
