@@ -1,0 +1,12 @@
+<template name="home">
+{{#if currentUser}}
+<img src="/pulley.jpeg" class="circle"/>
+<div id="names">
+<pre> 2*1B     2.5*1B     3*1B     3.5*1B     4*1B     4.5*1B     5*1B    5.5*1B    6*1B </pre>
+
+</div>
+{{/if}} 
+</template>
+
+
+

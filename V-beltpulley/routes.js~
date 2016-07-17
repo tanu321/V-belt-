@@ -12,6 +12,23 @@ action: function(){
 
 FlowRouter.route('/iron',{
 action: function(){
-	BlazeLayout.render("iron");
+	BlazeLayout.render("recentPrices");
+}
+});
+
+FlowRouter.route('/product',{
+action: function(){
+	BlazeLayout.render("product");
+}
+});
+FlowRouter.route('/getProducts',{
+action: function(){
+	BlazeLayout.render("getProducts");
+}
+});
+
+FlowRouter.route('/addProducts',{
+action: function(){
+	BlazeLayout.render("addProduct");
 }
 });

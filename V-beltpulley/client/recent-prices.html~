@@ -1,0 +1,6 @@
+<template name="recentPrices">
+{{#if currentUser}}
+<button class="btn btn-raised btn-info" id="add-btn" onclick="location.href='/addProducts'">add </button>
+{{/if}}
+</template>
+

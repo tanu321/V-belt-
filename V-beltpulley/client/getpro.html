@@ -1,0 +1,42 @@
+<template name="getProducts">
+
+
+<form class="select-price-form main-form" id="form">
+  <h2> Search Products </h2>
+  <label>Select Price </label> <br/>
+  <input type="number" name="price" id="sformPrice" class="half-width-input"><br/>
+  
+  <label> Select Type </label> <br/>
+  <select id="sformTypeOfProduct" class="form-control half-width-input" >
+    <option value="single belt">Single belt</option>
+    <option value="double belt">Double belt</option>
+    <option value ="triple belt">Triple belt</option>
+    <option value="drum belt" >Drum belt</option>
+    <option  value= "gattu" >Gattu</option>
+    <option value="solid pulley">Solid pulley</option>
+  </select>
+   
+  <button type="button"  id="search-button" class="btn btn-raised btn-primary">All Sizes</button>
+   
+
+<div id="di"></div>
+</form> 
+<div id="each" class="container">
+
+<table class="table table-bordered ">
+<tr> <th> name </th> <th> weight</th> <th> profit </th> <th> type of product </th> <th> Price </th></tr>
+{{#each pulleys}}
+<tr class="table table-bordered">
+	<td> <input type="text" id="name{{this._id}}" value="{{name}}"/></td>
+	<td><input type="text" id="weight{{this._id}}" value="{{weight}}"/></td>
+        <td><input type="text" id="profit{{this._id}}" value="{{profit}}"/></td>
+        <td>{{typeOfProduct}}</td>
+	<td>{{actualPrice}}</td>
+    <button class="edit">edit</button>    
+</tr>
+
+{{/each}}
+</table>
+</div>
+
+</template>

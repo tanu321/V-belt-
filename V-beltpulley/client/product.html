@@ -1,46 +1,10 @@
 <template name="product">
 {{#if currentUser}}
-
-{{>addProduct}}	
-{{>getProducts}}
+{{> buttons}}
 {{/if}}
 </template>
 
-<template name="getProducts">
-<button onclick="myFunction()" class="btn btn-raised btn-info" id="demo">search</button>
-<form class="select-price-form main-form" id="form">
-  <h2> Search Products </h2>
-  <label>Select Price </label> <br/>
-  <input type="number" name="price" id="sformPrice" class="half-width-input"><br/>
-  
-  <label> Select Type </label> <br/>
-  <select id="sformTypeOfProduct" class="form-control half-width-input" >
-    <option value="single belt">Single belt</option>
-    <option value="double belt">Double belt</option>
-    <option value ="triple belt">Triple belt</option>
-    <option value="drum belt" >Drum belt</option>
-    <option  value= "gattu" >Gattu</option>
-    <option value="solid pulley">Solid pulley</option>
-  </select>
-  
-  <button type="button"  id="search-button" class="btn btn-raised btn-primary">All Sizes</button>
-
-<div id="di"></div>
-</form> 
-<div id="each">
-<table class="table table-hover">
-<tr> <th> name </th> <th> weight</th> <th> profit </th> <th> type of product </th> <th> Price </th></tr>
-{{#each pulleys}}
-<tr>
-	<td> {{name}}</td>
-	<td>{{weight}}</td>
-        <td>{{profit}}</td>
-        <td>{{typeOfProduct}} </td>
-	<td>{{actualPrice}}</td>
-        
-</tr>
-{{/each}}
-</table>
-</div>
+<template name="buttons">
+<button  class="btn btn-raised btn-info" id="search-btn" onclick="location.href='/getProducts'">search</button>
 
 </template>

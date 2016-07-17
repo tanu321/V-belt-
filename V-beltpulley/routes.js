@@ -12,7 +12,7 @@ action: function(){
 
 FlowRouter.route('/iron',{
 action: function(){
-	BlazeLayout.render("iron");
+	BlazeLayout.render("recentPrices");
 }
 });
 
@@ -21,4 +21,20 @@ action: function(){
 	BlazeLayout.render("product");
 }
 });
+FlowRouter.route('/getProducts',{
+action: function(){
+	BlazeLayout.render("getProducts");
+}
+});
 
+FlowRouter.route('/addProducts',{
+action: function(){
+	BlazeLayout.render("addProduct");
+}
+});
+
+FlowRouter.route('/about',{
+action: function(){
+	BlazeLayout.render("about");
+}
+});

@@ -1,1 +1,2 @@
-Pulley = new Mongo.Collection('type');
+Pulley = new Mongo.Collection('pulley');
+Prices = new Mongo.Collection('price');

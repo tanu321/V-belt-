@@ -1,7 +1,3 @@
-$('.carousel').carousel({
-  interval: 5000
-});
-
 Template.addProduct.events({
 'click #add-product-btn'(events){
      var name = $('#name').val();
@@ -18,6 +14,8 @@ Template.addProduct.events({
 		}
 	});
 }
+  
+     
 });
 
 Template.getProducts.events({
@@ -28,23 +26,28 @@ Template.getProducts.events({
     var newResults = [];
     for (i in results) {
        res = results[i];
-       res.actualPrice = (price*res.weight)+res.profit;
+       var weigh = parseInt(res.weight, 10);
+	var profi = parseInt(res.profit, 10);
+	console.log(profi);
+       res.actualPrice =(price*weigh) + profi;
        results[i] = res;
     }
-console.log(results);
 Session.set('pull',results);
+},
+'click .edit'(event){
+    var name = $('#name'+this._id).val();
+    var weight = $('#weight'+this._id).val();
+    var profit = $('#profit'+this._id).val();
+    var values = {name:name, weight:weight, profit:profit};
+    var id = this._id;
+    Meteor.call('pulley.update',id, values);
 }
 });
 Template.getProducts.helpers({
 pulleys:function(){
 return Session.get('pull');
-
 }
 
 });
-  Template.getProducts.events({
-    'click button'(events){
-     var a=documnt.getElementById("form");
-       return a;
-}
-});
+
+
