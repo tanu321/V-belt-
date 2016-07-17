@@ -87,3 +87,12 @@ display: block;
        padding-left:10px;
        
 }
+#names{
+display:block;
+width:70%;
+margin-left:15%;
+margin-right:15%;
+background-color:teal;
+text-align:center;
+margin-top:50px;
+}

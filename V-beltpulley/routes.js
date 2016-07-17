@@ -22,3 +22,9 @@ action: function(){
 }
 });
 
+FlowRouter.route('/about',{
+action: function(){
+	BlazeLayout.render("about");
+}
+});
+
